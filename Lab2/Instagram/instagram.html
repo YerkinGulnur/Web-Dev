@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram login page</title>
+    <style>
+        body{
+            background-color: #FAFAFA;
+            height: 100px;
+            margin:0px;
+            font-family: Helvetica Arial sans-serif;
+        }
+
+        .cont{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+        }
+
+        .left{
+            height:700px;
+            width:430px;
+            background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yr/r/fzBXVxs22bH.png);
+            background-size: 468.32px 634.15px;
+            /*padding-top: 50px;*/
+            background-repeat: no-repeat;
+            align-items: stretch;
+            transform: scale(1.125);
+            margin-right:40px;
+            margin-top:100px;
+        }
+
+        .left img{
+            position: relative;
+            padding-top: 28px;
+            padding-left: 158px;
+        }
+        .cont-right{
+            margin-top: -50px;
+
+        }
+
+        .right{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: stretch;
+            width: 350px;
+            border: 1px solid rgb(219, 219, 219);
+            padding: 30px;
+            padding-bottom: 9px;
+            margin: 20px;
+        }
+        .right img{
+            padding:0px 70px 30px 70px;
+            background-size: 176px 181px;
+            width: 200px;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .right input{
+            padding:15px;
+            box-sizing: border-box;
+            border: 1px solid rgb(219, 219, 219);
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .right button{
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom:15px;
+            color: #ffffff;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 10px;
+            cursor: pointer;
+            background-color: rgb(71, 175, 255);
+            text-align: center;
+            font-family: Helvetica Arial sans-serif;
+        }
+         .t-box{
+             display: flex;
+             margin-top: 30px;
+             display: row;
+             align-items: center;
+             text-align: center;
+         }
+         .line1{
+             margin-top: -25px;
+             margin-bottom: 10px;
+             background-color: rgb(219, 219, 219);
+             height: 1px;
+             width: 140px;
+         }
+         .Or{
+             font-family: Helvetica Arial sans-serif;
+             margin-top: -25px;
+             margin-bottom: 10px;
+             font-weight: 600;
+             color: gray;
+             padding: 0px 20px 0px 20px;
+         }
+         .end{
+            text-align: center;
+             margin-top: 20px;
+             color: rgb(0, 149, 236);
+             font-weight: 600;
+             font-size: 18px;
+             text-decoration: none;
+         }
+
+         .facebook{
+             display: inline-block;
+             margin-right: 8px;
+             position: relative;
+             top: 3px;
+             height: 16px;
+             width: 16px;
+             background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png);
+             background-size: 440px 411px;
+             background-repeat:no-repeat;
+             background-position: -348px -330px;
+             transform: scale(1.4);
+             font-family: Helvetica Arial sans-serif;
+         }
+
+        .end a{
+            margin-top: 15px;
+            color: #166fe5;
+            font-size: 19px;
+            text-decoration: none;
+        }
+
+        .forgot a{
+            text-align: center;
+            color: rgb(0, 55, 107);
+            font-size: 14px;
+            text-decoration: none;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .second-box{
+            background-color: white;
+            border: 1px solid rgb(219, 219, 219);
+            text-align: center;
+            padding: 20px;
+            display: block;
+            margin: 20px;
+            margin-top: -10px;
+            font-size: 15px;
+        }
+
+        .second-box a{
+            color: rgba(0, 149, 256, 1);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .last-box{
+            word-wrap: break-word;
+            font-weight: 400;
+            align-items: center;
+            position: relative;
+            text-align: center;
+        }
+        .images{
+            text-align: center;
+        }
+
+        footer ol{
+            display: flex;
+            margin-left: 250px;
+            margin-right: 200px;
+            flex-wrap: wrap;
+            list-style-type: none; /*көп затты өшіріп тастайды*/
+            padding: 10px 0;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        footer ol:first-child{
+            border-bottom: 1px solid #dddfe2;
+        }
+
+        footer ol li{
+            padding-right: 20px;
+            padding-bottom: 5px;
+            font-size: 15px;
+            color: #737373;
+        }
+
+        footer ol li a{
+            text-decoration: none;
+            color: #737373;
+        }
+        footer ol li a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="left">
+                <img src="instagram.png" alt="Instagram" width="250px" height="538.84px">
+        </div>
+        <div class="cont-right">
+        <div class="right">
+                <img src="instagram_logo.svg.png" alt="insta-logo">
+                <input type="text" placeholder="Телефон, имя пользователя или эл.адрес">
+                <input type="password" placeholder="Пароль">
+                <button>Войти</button>
+
+            <div class="t-box">
+                <div class="line1"></div>
+                <div class="Or">ИЛИ</div>
+                <div class="line1"></div>
+            </div>
+            <div class="end">
+                <span class="facebook"></span>
+                <span><a href="#">Войти через Facebook</a></span>
+            </div>
+                <div class="forgot">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+            </div>
+            <div class="second-box">
+                <span>У вас ещё нет аккаунта?</span>
+                <span><a href="#">Зарегистрироваться</a></span>
+            </div>
+            <div class="last-box">
+                <p>Установите приложение.</p>
+            </div>
+            <div class="images">
+                <img src="app-store.png" width="150px">
+                <img src="google-play.png" width="150">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-contents">
+            <ol>
+                <li><a href="#">Meta</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Конфиденциальность</a></li>
+                <li><a href="#">Условия</a></li>
+                <li><a href="#">Популярные аккаунты</a></li>
+                <li><a href="#">Места</a></li>
+                <li><a href="#">Instagram Lite</a></li>
+                <li><a href="#">Загрузка контактов и лица, не являющиеся пользователями</a></li>
+            </ol>
+            <ol>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">© 2023 Instagram from Meta</a></li>
+            </ol>
+        </div>
+    </footer>
+</body>
+</html>

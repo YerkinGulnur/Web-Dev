@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook log in</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+        .whiteBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .t-box{
+            width: 500px;
+        }
+
+        .t-box img{
+            width: 235px;
+            margin-bottom: -10px;
+        }
+
+        .t-box p{
+            color: #000000;
+            font-size: 26px;
+            font-weight: normal;
+            line-height: 32px;
+        }
+
+        .form-box{
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            background-color: #fff;
+            padding:15px;
+            text-align:center;
+            border-radius: 5px;
+            box-shadow: 0px 2px 10px 1px rgba(71, 71, 71, 0.52); /*тень*/
+        }
+
+        .form-box input{
+            width:100%;
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 18px;
+            box-sizing: border-box;
+            border: 1px solid #eeebee;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form-box input:focus{
+            box-shadow: 0px 0px 1px 1px rgb(22, 111, 229); /*жазған кезде аты жонин тень шығады кок*!*/
+        }
+
+        .form-box button{
+            width: 100%;
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            padding: 13px 0;
+            cursor: pointer;
+            background-color: #166fe5;
+        }
+        .form-box button:hover{
+            background-color: #1877f2;
+        }
+
+        .form-box a{
+            color: #166fe5;
+            font-size: 14px;
+            text-decoration: none;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .form-box a:hover{
+            text-decoration: underline;
+        }
+
+        .form-box hr{
+            border: 1px solid #dadde1;
+            margin-bottom: 15px;
+        }
+
+        .form-box .green-box a{
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color: #36a420;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .form-box .green-box a:hover{
+            background-color: #42b72a;
+        }
+
+        #end{
+            width: 80%;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 28px;
+            display: block;
+        }
+
+        .www{
+            font-size: 14px;
+            font-weight: 600;
+            color: #1c1e21;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .www:hover{
+            text-decoration: underline;
+        }
+
+        footer{
+            height: 30vh;
+            background-color: #ffffff;
+        }
+
+        footer ol{
+            display: flex;
+            margin-left: 250px;
+            margin-right: 200px;
+            flex-wrap: wrap;
+            list-style-type: none; /*көп затты өшіріп тастайды*/
+            padding: 10px 0;
+        }
+
+        footer ol:first-child{
+            border-bottom: 1px solid #dddfe2;
+        }
+
+        footer ol:first-child li:last-child button{
+            background-color: #f5f6f7;
+            border: 1px solid #ccd0d5;
+            outline: none;
+            color: #4b4f56;
+            padding: 0 8px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        footer ol li{
+            padding-right: 20px;
+            padding-bottom: 5px;
+            font-size: 12px;
+            color: #737373;;
+        }
+
+        footer ol li a{
+            text-decoration: none;
+            color: #737373;;
+        }
+        footer ol li a:hover{
+            text-decoration: underline;
+        }
+        footer small{
+            font-size: 11px;
+            margin-left: 250px;
+            margin-right: 200px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="whiteBox">
+    <div class="t-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/2560px-Facebook_Logo_%282019%29.svg.png" alt="Facebook">
+        <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+    </div>
+    <div class="cont">
+        <div class="form-box">
+            <form action="#">
+                <input type="text" placeholder="Электронный адрес или номер телефона">
+                <input type="password" placeholder="Пароль">
+                <button type="submit">Вход</button>
+                <a href="#">Забыли пароль?</a>
+            </form>
+            <hr>
+            <div class="green-box">
+                <a href="#">Создать аккаунт</a>
+            </div>
+        </div>
+            <div id="end">
+                <p><a href="#" class="www">Создать Страницу</a>
+                 знаменитости, музыкальной группы или компании.<p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-contents">
+            <ol>
+                <li>Русский</li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">Türkçe</a></li>
+                <li><a href="#">Bahasa Indonesia</a></li>
+                <li><a href="#">中文(简体)</a></li>
+                <li><a href="#">Қазақша</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">Shqip</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><button>+</button></li>
+            </ol>
+            <ol>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Места</a></li>
+                <li><a href="#">Игры</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Meta Pay</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Bulletin</a></li>
+                <li><a href="#">Благотворительные акции</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Центр информации о выборах</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Центр конфиденциальности</a></li>
+                <li><a href="#">Группы</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Создать рекламу</a></li>
+                <li><a href="#">Создать Страницу</a></li>
+                <li><a href="#">Разработчикам</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Файлы cookie</a></li>
+                <li><a href="#">Рекламные предпочтения</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Справка</a></li>
+                <li><a href="#">Загрузка контактов и лица, не являющиеся пользователями</a></li>
+            </ol>
+            <small>Meta © 2023</small>
+        </div>
+    </footer>
+</body>
+</html>
