@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "labb4": {
+    "lab4": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/labb4",
+            "outputPath": "dist/lab4",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "labb4:build:production"
+              "buildTarget": "lab4:build:production"
             },
             "development": {
-              "buildTarget": "labb4:build:development"
+              "buildTarget": "lab4:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "labb4:build"
+            "buildTarget": "lab4:build"
           }
         },
         "test": {
@@ -98,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "2cd2a3fd-829e-48a1-bf5d-d7aa74b4c896"
+    "analytics": "007fbf66-577e-427c-93f7-6c17598cba32"
   }
 }
