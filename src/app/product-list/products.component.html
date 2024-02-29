@@ -1,0 +1,16 @@
+<!-- products.component.html -->
+<div *ngFor="let product of products">
+    <img [src]="product.image" alt="{{ product.name }} Image">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p>Rating: {{ product.rating }}</p>
+    <button (click)="shareProduct('whatsapp://send?text=Check out this product: ' + product.kaspiLink)">Share on Whatsapp</button>
+    <button (click)="shareProduct('https://t.me/share/url?url=' + product.kaspiLink)">Share on Telegram</button>
+    <div *ngIf="product.imageGallery">
+      <h3>Image Gallery</h3>
+      <div *ngFor="let image of product.imageGallery">
+        <img [src]="image" alt="{{ product.name }} Image">
+      </div>
+    </div>
+  </div>
+  
