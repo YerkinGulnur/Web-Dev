@@ -1,0 +1,24 @@
+.vacancy-info {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9; /
+}
+
+.vacancy-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.vacancy-info p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.vacancy-info .salary {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #007bff;
+}

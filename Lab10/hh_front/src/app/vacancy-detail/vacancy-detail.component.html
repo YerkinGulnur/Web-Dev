@@ -1,0 +1,9 @@
+<app-top-bar></app-top-bar>
+
+<div class="vacancy-info" *ngIf="vacancy">
+  <h2>{{ vacancy.name }}</h2>
+  <p>{{ vacancy.description }}</p>
+  <p class="salary">{{ vacancy.salary }}</p>
+</div>
+
+

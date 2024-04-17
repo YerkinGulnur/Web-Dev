@@ -1,0 +1,34 @@
+.top-ten-vacancies {
+  padding: 20px;
+}
+
+.top-ten-vacancies h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.top-ten-vacancies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.top-ten-vacancies li {
+  margin-bottom: 20px;
+}
+
+.top-ten-vacancies li div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.top-ten-vacancies h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.top-ten-vacancies p {
+  margin: 5px 0;
+}

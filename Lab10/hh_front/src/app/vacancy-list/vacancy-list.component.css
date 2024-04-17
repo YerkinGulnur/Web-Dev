@@ -1,0 +1,28 @@
+.vacancy-list {
+  padding: 20px;
+}
+
+.vacancy-list h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.vacancy-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vacancy-list li {
+  margin-bottom: 10px;
+}
+
+.vacancy-list a {
+  text-decoration: none;
+  color: #007bff; /* Цвет ссылки */
+  font-size: 18px;
+}
+
+.vacancy-list a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
